@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Loading from "../components/loading/Loading";
 import PageHeader from "../components/pageHeader/PageHeader";
+import styles from "../pages/productDetails.module.css";
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -25,21 +26,21 @@ const ProductDetails = () => {
         <article>
           <PageHeader title={product.title} headerImg={product.thumbnail} />
           <div className={styles.productContent}>
-            <div className={styles.recipeIngredients}>
-              <h2>Description</h2>
-              <ul>
-                {product.description.map((description, index) => (
-                  <li key={index}>{description}</li>
-                ))}
-              </ul>
+            <div className={styles.productDescription}>
+              <h2>Produkt beskrivelse</h2>
+              <div>
+                {/*   {product.description.map((description, index) => (
+                  <p key={index}>{description}</p>
+                ))} */}
+              </div>
             </div>
             <div className={styles.productDimensions}>
-              <h2>Dimensions</h2>
-              <ol>
-                {product.dimensions.map((dimensions, index) => (
-                  <li key={index}>{dimensions}</li>
-                ))}
-              </ol>
+              <h2>Produkts måling</h2>
+              <div>
+                {/*  {product.dimensions.map((dimensions, index) => (
+                  <p key={index}>{dimensions}</p>
+                ))} */}
+              </div>
             </div>
           </div>
         </article>

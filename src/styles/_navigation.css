@@ -6,10 +6,10 @@
   padding: 1rem 2rem;
   background-color: #b8d9c1;
   border-bottom: 1px solid #e0e0e0;
-
-  img {
-    width: 100px;
-  }
+}
+.navbar img {
+  width: 100px;
+  border: none;
 }
 
 .burger-menu {

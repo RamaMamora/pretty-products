@@ -50,16 +50,23 @@ const Newsletter = () => {
         <Loading />
       ) : (
         <form onSubmit={handleSubmit} className={styles.form}>
-          <Clock />
-          <label>Din email:</label>
-          <input
-            type="email"
-            value={inputValue}
-            onChange={handleInputChange}
-            required
-            ref={inputRef}
-          />
-          <Button buttonText="Tilmeld" type="submit" />
+          <div>
+            <Clock />
+          </div>
+
+          <div className={styles.newsletterInfo}>
+            <label>Din email:</label>
+            <input
+              type="email"
+              value={inputValue}
+              onChange={handleInputChange}
+              required
+              ref={inputRef}
+            />
+            <Button buttonText="Tilmeld" type="submit" />
+          </div>
+          <img src="../../assets/newsletter.jpg" alt="" />
+          <div className={styles.newsletterImg}></div>
         </form>
       )}
 

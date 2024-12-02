@@ -1,11 +1,11 @@
 .form {
-  max-width: 400px;
+  max-width: 1080px;
   margin: 2em auto;
-  padding: 1em;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.388);
+  padding: 4em;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   gap: 1em;
+  align-items: center;
 }
 
 .form label {
@@ -15,7 +15,15 @@
   color: #333;
   text-transform: uppercase;
 }
-
+.newsletterImg {
+  width: 250px;
+  min-height: 300px;
+  border: 1px solid black;
+  border-radius: 0 0 250px 250px;
+  img {
+    width: 100%;
+  }
+}
 .form input[type="email"] {
   padding: 0.5em;
   font-size: 1em;

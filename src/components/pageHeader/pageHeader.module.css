@@ -1,7 +1,7 @@
 .header {
   max-width: 1080px;
   margin: 0 auto;
-  height: 50vh;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   background-color: rgba(0, 0, 0, 0.233);
@@ -15,7 +15,7 @@
 
 .headerContent {
   text-align: start;
-  margin-bottom: 260px;
+  margin-bottom: 290px;
   width: 100%;
 }
 
@@ -28,7 +28,7 @@
 
 @media (min-width: 768px) {
   .header {
-    height: 50vh;
+    height: 100vh;
   }
 
   .headerContent {

@@ -23,7 +23,7 @@ const Home = () => {
       <SectionHeader title="Kunders favoritter" />
       <Favorites />
       <SectionHeader title="Mine Favoritter" />
-      {/*  <MyFavorites /> */}
+      <MyFavorites />
       <SectionHeader title="Tilmeld dig vores nyhedsbrev" />
       <Newsletter />
     </article>
